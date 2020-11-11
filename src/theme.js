@@ -1,5 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
+import { YELLOW, GREY } from './constants';
+
 // https://material-ui.com/customization/palette/
 export default createMuiTheme({
   typography: {
@@ -30,6 +32,20 @@ export default createMuiTheme({
   },
   button: {
     borderRadius: '30px'
+  },
+  palette: {
+    primary: {
+      light: YELLOW.light,
+      main: YELLOW.main,
+      dark: YELLOW.dark,
+      text: YELLOW.text
+    },
+    secondary: {
+      light: GREY.light,
+      main: GREY.main,
+      dark: GREY.dark,
+      text: GREY.text
+    }
   },
   overrides: {
     MuiCssBaseline: {
