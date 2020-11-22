@@ -6,6 +6,7 @@ import Navigation from './navigation';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import theme from './theme';
+import './App.css';
 
 function App() {
   return (
