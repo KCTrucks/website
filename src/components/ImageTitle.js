@@ -29,11 +29,11 @@ class ImageTitle extends Component {
     return (
       <div className={classes.titleImage} style={{
         backgroundImage: `linear-gradient(
-          rgba(0, 0, 0, 0.3),
-          rgba(0, 0, 0, 0.3)
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
         ), url(${this.props.image})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: this.props.backgroundPosition ? this.props.backgroundPosition : 'center',
           backgroundRepeat: 'no-repeat',
           color: 'white',
           minHeight: '400px',

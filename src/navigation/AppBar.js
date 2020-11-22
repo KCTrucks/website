@@ -39,7 +39,7 @@ const LINKS = [
   },
   {
     slug: '/bed-liner',
-    text: 'Spray On Bedliner'
+    text: 'Spray On Bed Liner'
   },
   {
     slug: '/contact-us',
