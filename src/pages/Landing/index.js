@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button, Grid, Typography, withStyles } from '@material-ui/core';
+import { Button, Container, Grid, Link, Typography, withStyles } from '@material-ui/core';
 
 // Images
 import KCTrucksCorner from '../../images/stock/KCTrucksCorner.png';
+import BackOfGarage from '../../images/stock/BackOfGarage.png';
 
 // Constants
 import { YELLOW } from '../../constants';
@@ -110,7 +111,53 @@ class Landing extends React.Component {
           </Grid>
         </div>
 
-        <Typography variant='h2' component='h1'>Hello, world!</Typography>
+        {/* Our Services */}
+        <Container variant='main' align='center' style={{ padding: '4em 1em 5em 1em' }}>
+          <Typography variant='h2' style={{ marginBottom: '1em' }}>Our Services</Typography>
+
+          <Typography variant='h3'>The KC-Truck Liner Spray-On Bed Liner</Typography>
+          <Typography variant='body1' style={{ marginBottom: '2em' }}>A high pressure poly-urea coating that looks great and lasts forever. <Link href='/bed-liner'>Learn more.</Link></Typography>
+
+          <Typography variant='h3'>Leer Tops and Lids</Typography>
+          <Typography variant='body1' style={{ marginBottom: '2em' }}>The industry leader in fiberglass truck bed tonneaus and toppers. Many styles of bed covers available. Dealer demo's and consignment lids on site are heavily discounted!</Typography>
+
+          <Typography variant='h3'>Complete Towing Solutions</Typography>
+          <Typography variant='body1' style={{ marginBottom: '2em' }}>B&W Turnover Ball goosenecks, hitches, plugs, trailer lights, wiring, and brakes.</Typography>
+
+          <Typography variant='h3'>A full line of accessories</Typography>
+          <Typography variant='body1'>Bed mats, floor liners, visors, bug shields, rain guards, mud flaps, chrome trim, racks, toolboxes, cargo items, and much, much more!</Typography>
+        </Container>
+
+        {/* Contact Us */}
+        <div style={{
+          backgroundImage: `linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ), url(${BackOfGarage})`,
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            padding: '10%',
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundSize: 'cover',
+            backgroundAttachment: 'scroll'
+        }}>
+          <Typography variant='h2' style={{ textAlign: 'center', color: 'white', marginBottom: '1em' }}>Visit Us Today</Typography>
+          <Grid container direction='row' justify='center' spacing={5}>
+            <Grid item>
+              <Typography variant='body1' style={{ textAlign: 'center', color: 'white' }}>2223 Scottsville Rd.</Typography>
+              <Typography variant='body1' style={{ textAlign: 'center', color: 'white' }}>Glasgow, KY 42141</Typography>
+              <Typography variant='body1' style={{ textAlign: 'center', color: 'white' }}>Tel: (270) 629-2886</Typography>
+            </Grid>
+
+            <Grid item>
+              <Typography variant='body1' style={{ textAlign: 'center', color: 'white' }}>M-F 8:00 AM to 4:00 PM</Typography>
+              <Typography variant='body1' style={{ textAlign: 'center', color: 'white' }}>Sat 8:00 AM to 10:00 AM</Typography>
+              <Typography variant='body1' style={{ textAlign: 'center', color: 'white' }}>Sun Closed</Typography>
+              <Typography variant='body1' style={{ textAlign: 'center', color: 'white' }}>Please call to confirm.</Typography>
+            </Grid>
+          </Grid>
+        </div>
       </div>
     );
   }

@@ -48,9 +48,6 @@ const LINKS = [
 ];
 
 const useStyles = makeStyles(theme => ({
-  appBar: {
-    backgroundColor: theme.palette.secondary.light
-  },
   button: {
     textAlign: 'center',
     fontSize: '14px',
@@ -82,7 +79,7 @@ export default function AppToolBar() {
   }
 
   return (
-    <AppBar className={classes.appBar} position='static'>
+    <AppBar color='transparent' position='static'>
       <Toolbar>
 
         {/* --- LOGO --- */}

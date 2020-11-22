@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography } from '@material-ui/core';
+import { Container, Hidden, Typography } from '@material-ui/core';
 import ImageGallery from 'react-image-gallery';
 
 // Images
@@ -90,11 +90,19 @@ const images = [
 
 export default class BedLiner extends React.Component {
   render() {
+    const bodyText = "In addition to truck beds, there are many other applications for spray-on bed liner! From boats, to trailers, to rocker panels, to floor boards— we can do it all. Custom colors also available.";
     return (
-      <div>
+      <div style={{ paddingBottom: '5em' }}>
         <ImageTitle image={BackOfGarage} title='Spray-On Bed Liner' />
         <Container variant='main' align='center'>
-          <Typography variant='h2' style={{ margin: '2em 0em 2em 0em' }}>In addition to truck beds, there are many other applications for spray-on bed liner! From boats, to trailers, to rocker panels, to floor boards— we can do it all. Custom colors also available.</Typography>
+          <div style={{ margin: '3em 0em 3em 0em' }}>
+            <Hidden smDown>
+              <Typography variant='h2' component='body1'>{bodyText}</Typography>
+            </Hidden>
+            <Hidden mdUp>
+              <Typography variant='h3' component='body1'>{bodyText}</Typography>
+            </Hidden>
+          </div>
 
           <div style={{ maxWidth: 975 }}>
             <ImageGallery items={images} showPlayButton={false} />

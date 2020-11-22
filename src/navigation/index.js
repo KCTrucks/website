@@ -1,8 +1,11 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+// Nav
 import AppBar from './AppBar';
+import Footer from './Footer';
 
+// Pages
 import Landing from '../pages/Landing';
 import ContactUs from '../pages/ContactUs';
 import AboutUs from '../pages/AboutUs';
@@ -34,6 +37,7 @@ function Navigation() {
           <Landing />
         </Route>
       </Switch>
+      <Footer />
     </>
   );
 }
