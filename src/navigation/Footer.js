@@ -2,7 +2,6 @@ import React from 'react';
 import {
   AppBar,
   Grid,
-  IconButton,
   Toolbar,
   Typography
 } from '@material-ui/core';
@@ -35,10 +34,10 @@ export default function Footer() {
           </Grid>
 
           {/* --- SOCIAL BUTTONS --- */}
-          <Grid item xs={6} style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', color: GREY.text }}>
-            2223 Scottsville Rd.
-            <br />Glasgow, KY 42141
-            <br />Tel: (270) 629-2886
+          <Grid item xs={6} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end', color: GREY.text }}>
+            <Typography variant='body1'>2223 Scottsville Rd.</Typography>
+            <Typography variant='body1'>Glasgow, KY 42141</Typography>
+            <Typography variant='body1'>Tel: (270) 629-2886</Typography>
           </Grid>
         </Grid>
       </Toolbar>

@@ -11,7 +11,7 @@ export default class OurServices extends React.Component {
   render() {
     const bodyText = "We install everything we sell. Stop by and get the kind of service only available from locally owned and operated establishment. We have easy parking, you can see and touch products, and talk to the owner and installers.";
     return (
-      <div>
+      <div style={{ marginBottom: '5em' }}>
         <ImageTitle image={Garage} title='Our Services' />
         <Container variant='main' align='center'>
           <div style={{ margin: '3em 0em 3em 0em' }}>
@@ -33,7 +33,7 @@ export default class OurServices extends React.Component {
           <Typography variant='body1' style={{ marginBottom: '2em' }}>B&W Turnover Ball goosenecks, hitches, plugs, trailer lights, wiring, and brakes.</Typography>
 
           <Typography variant='h3'>A full line of accessories</Typography>
-          <Typography variant='body1' style={{ marginBottom: '2em' }}>Bed mats, floor liners, visors, bug shields, rain guards, mud flaps, chrome trim, racks, toolboxes, cargo items, and much, much more!</Typography>
+          <Typography variant='body1'>Bed mats, floor liners, visors, bug shields, rain guards, mud flaps, chrome trim, racks, toolboxes, cargo items, and much, much more!</Typography>
         </Container>
       </div>
     );
