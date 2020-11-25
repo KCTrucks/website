@@ -5,6 +5,9 @@ import { Button, Container, Grid, Link, Typography, withStyles } from '@material
 import KCTrucksCorner from '../../images/stock/KCTrucksCorner.jpg';
 import BackOfGarage from '../../images/stock/BackOfGarage.jpg';
 
+// Components
+import OurServicesSection from '../../components/OurServicesSection';
+
 // Constants
 import { YELLOW } from '../../constants';
 
@@ -101,7 +104,7 @@ class Landing extends React.Component {
           <Grid container direction='column'>
             <Grid item className={classes.titleGrid}>
               <Typography variant='h2' component='h1' className={classes.titleText}>South Central Kentucky's Full Service Automotive Aftermarket Accessories Shop</Typography>
-              <Typography variant='subtitle1' className={classes.subtitleText}>We specialize in spray-on bed liners, leer caps & lids, and complete towing solutions.</Typography>
+              <Typography variant='subtitle1' className={classes.subtitleText}>We specialize in spray-on bed liners, Leer caps & lids, and complete towing solutions.</Typography>
             </Grid>
             <Grid item className={classes.titleLogoGrid}>
               <Button variant='contained' href='/contact-us' style={{ backgroundColor: YELLOW.main, textTransform: 'none', color: 'white', marginTop: '2em' }} className={classes.titleLogo}>
@@ -115,17 +118,7 @@ class Landing extends React.Component {
         <Container variant='main' align='center' style={{ padding: '4em 1em 5em 1em' }}>
           <Typography variant='h2' style={{ marginBottom: '1em' }}>Our Services</Typography>
 
-          <Typography variant='h3'>The KC-Truck Liner Spray-On Bed Liner</Typography>
-          <Typography variant='body1' style={{ marginBottom: '2em' }}>A high pressure poly-urea coating that looks great and lasts forever. <Link href='/bed-liner'>Learn more.</Link></Typography>
-
-          <Typography variant='h3'>Leer Tops and Lids</Typography>
-          <Typography variant='body1' style={{ marginBottom: '2em' }}>The industry leader in fiberglass truck bed tonneaus and toppers. Many styles of bed covers available. Dealer demo's and consignment lids on site are heavily discounted!</Typography>
-
-          <Typography variant='h3'>Complete Towing Solutions</Typography>
-          <Typography variant='body1' style={{ marginBottom: '2em' }}>B&W Turnover Ball goosenecks, hitches, plugs, trailer lights, wiring, and brakes.</Typography>
-
-          <Typography variant='h3'>A full line of accessories</Typography>
-          <Typography variant='body1'>Bed mats, floor liners, visors, bug shields, rain guards, mud flaps, chrome trim, racks, toolboxes, cargo items, and much, much more!</Typography>
+          <OurServicesSection />
         </Container>
 
         {/* Contact Us */}

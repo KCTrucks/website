@@ -32,7 +32,7 @@ class AboutUs extends React.Component {
         <Container variant='main' style={{ padding: '2em 2em 0em 2em' }} align='center'>
 
           <Typography variant='h3' component='body1'>
-            The shop includes a 1000 sq ft showroom and is located in Glasgow, Kentucky on US 31E just 1/4 mile south of the Cumberland Parkway. Established in 2004, we have helped thousands of customers with a variety of parts and services.
+            The shop includes a 1000 sq. ft. showroom and is located in Glasgow, Kentucky on US 31E just 1/4 mile south of the Cumberland Parkway. Established in 2004, we have helped thousands of customers with a variety of parts and services.
           </Typography>
 
           <div style={{ marginTop: '1em' }}>
