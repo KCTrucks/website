@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Link, Typography } from '@material-ui/core';
 
 // Images
-import Products from '../../images/stock/Products.png';
+import Products from '../../images/stock/Products.jpg';
 
 // Components
 import ImageTitle from '../../components/ImageTitle';

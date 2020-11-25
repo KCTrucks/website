@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Link, Typography } from '@material-ui/core';
 
 // Images
-import KCTrucksBanner from '../../images/stock/KCTrucksBanner.png';
+import KCTrucksBanner from '../../images/stock/KCTrucksBanner.jpg';
 
 // Components
 import ImageTitle from '../../components/ImageTitle';

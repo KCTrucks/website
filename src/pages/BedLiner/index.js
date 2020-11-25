@@ -3,7 +3,7 @@ import { Container, Hidden, Typography } from '@material-ui/core';
 import ImageGallery from 'react-image-gallery';
 
 // Images
-import BackOfGarage from '../../images/stock/BackOfGarage.png';
+import BackOfGarage from '../../images/stock/BackOfGarage.jpg';
 import BedLiner1 from '../../images/bed-liner/BedLiner1.jpg';
 import BedLiner2 from '../../images/bed-liner/BedLiner2.jpg';
 import BedLiner3 from '../../images/bed-liner/BedLiner3.jpg';

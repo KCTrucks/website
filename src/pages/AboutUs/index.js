@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Grid, Hidden, Link, Typography, withStyles } from '@material-ui/core';
 
 // Images
-import SideDesk from '../../images/stock/SideDesk.png';
+import SideDesk from '../../images/stock/SideDesk.jpg';
 import ChristmasParade from '../../images/stock/ChristmasParade.png';
 import Ken from '../../images/people/Ken.jpg';
 import Drew from '../../images/people/Drew.jpg';

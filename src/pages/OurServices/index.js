@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Hidden, Typography, Link } from '@material-ui/core';
 
 // Images
-import Garage from '../../images/stock/Garage.png';
+import Garage from '../../images/stock/Garage.jpg';
 
 // Components
 import ImageTitle from '../../components/ImageTitle';

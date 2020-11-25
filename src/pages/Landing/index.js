@@ -2,8 +2,8 @@ import React from 'react';
 import { Button, Container, Grid, Link, Typography, withStyles } from '@material-ui/core';
 
 // Images
-import KCTrucksCorner from '../../images/stock/KCTrucksCorner.png';
-import BackOfGarage from '../../images/stock/BackOfGarage.png';
+import KCTrucksCorner from '../../images/stock/KCTrucksCorner.jpg';
+import BackOfGarage from '../../images/stock/BackOfGarage.jpg';
 
 // Constants
 import { YELLOW } from '../../constants';
