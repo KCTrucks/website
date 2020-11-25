@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Grid, Link, Typography, withStyles } from '@material-ui/core';
+import { Button, Container, Grid, Typography, withStyles } from '@material-ui/core';
 
 // Images
 import KCTrucksCorner from '../../images/stock/KCTrucksCorner.jpg';

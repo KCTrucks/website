@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Hidden, Typography, Link } from '@material-ui/core';
+import { Container, Hidden, Typography } from '@material-ui/core';
 
 // Images
 import Garage from '../../images/stock/Garage.jpg';
