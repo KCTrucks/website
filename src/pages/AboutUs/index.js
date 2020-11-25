@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Grid, Link, Typography, withStyles } from '@material-ui/core';
+import { Container, Grid, Hidden, Link, Typography, withStyles } from '@material-ui/core';
 
 // Images
 import SideDesk from '../../images/stock/SideDesk.png';
 import ChristmasParade from '../../images/stock/ChristmasParade.png';
-import Ken from '../../images/people/Person.png';
-import Drew from '../../images/people/Person.png';
+import Ken from '../../images/people/Ken.jpg';
+import Drew from '../../images/people/Drew.jpg';
 
 // Components
 import ImageTitle from '../../components/ImageTitle';
@@ -24,6 +24,7 @@ const styles = theme => ({
 class AboutUs extends React.Component {
   render() {
     const { classes } = this.props;
+    const LOCAL_MESSAGE = "For a small, locally-owned business, it's never just about business— we live here. We hope you'll visit.";
     return (
       <div>
         <ImageTitle image={SideDesk} title='About Us' />
@@ -45,7 +46,7 @@ class AboutUs extends React.Component {
               Our Team
             </Typography>
             <Grid container direction='row' justify='center' style={{ marginBottom: '100px' }}>
-              {/* Daniel */}
+              {/* Ken */}
               <Grid item xs={12} sm='auto'>
                 <Grid container direction='column'>
                   <Grid item style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -54,7 +55,7 @@ class AboutUs extends React.Component {
                       height={200}
                       src={Ken}
                       alt={'Ken Cambron'}
-                      style={{ borderRadius: 100 }}
+                      style={{ borderRadius: 100, objectFit: 'cover' }}
                     />
                   </Grid>
                   <Grid item style={{ marginTop: '10px' }}>
@@ -64,7 +65,7 @@ class AboutUs extends React.Component {
                 </Grid>
               </Grid>
 
-              {/* Sydney */}
+              {/* Drew */}
               <Grid item xs={12} sm='auto' className={classes.drewGrid}>
                 <Grid container direction='column'>
                   <Grid item style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -73,7 +74,7 @@ class AboutUs extends React.Component {
                       height={200}
                       src={Drew}
                       alt={'Drew Berry'}
-                      style={{ borderRadius: 100 }}
+                      style={{ borderRadius: 100, objectFit: 'cover' }}
                     />
                   </Grid>
                   <Grid item style={{ marginTop: '10px' }}>
@@ -88,13 +89,19 @@ class AboutUs extends React.Component {
 
         <div style={{ backgroundColor: 'lightgrey', padding: '2em 0em 2em 0em' }}>
           <Container variant='main'>
-            <Grid container direction='row' justify='center' align='center' spacing={1}>
+            <Grid container direction='row' justify='center' align='center' spacing={2}>
               <Grid item lg={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <img src={ChristmasParade} alt='Glasgow Christmas Parade Float' style={{ maxWidth: 400, maxHeight: 400, objectFit: 'contain' }} />
               </Grid>
 
               <Grid item lg={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <Typography variant='h2' style={{ textAlign: 'center' }}>For a small, locally owned business, it's never just about business— we live here. We hope you'll visit.</Typography>
+
+                <Hidden mdUp>
+                  <Typography variant='h3' component='h2' style={{ textAlign: 'center' }}>{LOCAL_MESSAGE}</Typography>
+                </Hidden>
+                <Hidden smDown>
+                  <Typography variant='h2' style={{ textAlign: 'center' }}>{LOCAL_MESSAGE}</Typography>
+                </Hidden>
               </Grid>
             </Grid>
           </Container>

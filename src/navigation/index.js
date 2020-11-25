@@ -17,26 +17,28 @@ function Navigation() {
   return (
     <>
       <AppBar />
-      <Switch>
-        <Route path='/bed-liner'>
-          <BedLiner />
-        </Route>
-        <Route path='/products'>
-          <OurProducts />
-        </Route>
-        <Route path='/services'>
-          <OurServices />
-        </Route>
-        <Route path='/about-us'>
-          <AboutUs />
-        </Route>
-        <Route path='/contact-us'>
-          <ContactUs />
-        </Route>
-        <Route path='/'>
-          <Landing />
-        </Route>
-      </Switch>
+      <div style={{ minHeight: window.innerHeight - 195 }}>
+        <Switch>
+          <Route path='/bed-liner'>
+            <BedLiner />
+          </Route>
+          <Route path='/products'>
+            <OurProducts />
+          </Route>
+          <Route path='/services'>
+            <OurServices />
+          </Route>
+          <Route path='/about-us'>
+            <AboutUs />
+          </Route>
+          <Route path='/contact-us'>
+            <ContactUs />
+          </Route>
+          <Route path='/'>
+            <Landing />
+          </Route>
+        </Switch>
+      </div>
       <Footer />
     </>
   );
